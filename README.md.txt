@@ -1,0 +1,2 @@
+# GeoShare Project
+##The System provides location-based encryption to AES encryption by adding an extra layer of security that contains location and time. The developed layer helps in checking the location and time of the receiver and if the constraints (location and time) match, only then the system will allow data decryption.
