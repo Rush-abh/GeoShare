@@ -6,7 +6,7 @@ from Tkinter import *
 import socket
 import sys
 
-button_bg = "#283593"
+
 TCP_IP = '52.77.68.125'
 TCP_PORT = 9999
     
@@ -100,31 +100,29 @@ def recfile():
 
 global filename,key
 root = Tk()
-root.geometry("560x240")
-root.configure(bg="#ffffff")
 
-label1 = Label(root,text="Select file:",font=8,bg="#ffffff")
-label2 = Label(root,text="Key:",font=8,bg="#ffffff")
+label1 = Label(root,text="Select file")
+label2 = Label(root,text="key")
 
-filename = Entry(root,borderwidth=2)
-key = Entry(root,borderwidth=2)
+filename = Entry(root)
+key = Entry(root)
 
 
-btn1 = Button(root,text="Encrypt",width=6,font=6,highlightcolor=button_bg,borderwidth=2,bg=button_bg,fg="white",relief=GROOVE,command=encrypt)
-btn2 = Button(root,text="Decrypt",width=6,font=6,highlightcolor=button_bg,borderwidth=2,bg=button_bg,fg="white",relief=GROOVE,command=decrypt)
-btn3 = Button(root,text="Send",width=6,font=6,highlightcolor=button_bg,borderwidth=2,bg=button_bg,fg="white",relief=GROOVE,command=sendfile)
-btn4 = Button(root, text="Receive",width=6,font=6,highlightcolor=button_bg,borderwidth=2,bg=button_bg,fg="white",relief=GROOVE,command=recfile)
+btn1 = Button(root,text="Encrypt",command=encrypt)
+btn2 = Button(root,text="Decrypt",command=decrypt)
+btn3 = Button(root,text="Send",command=sendfile)
+btn4 = Button(root, text="Receive",command=recfile)
 
 
-label1.place(relx=0.1, rely=0.1, anchor=CENTER)
-label2.place(relx=0.1, rely=0.2, anchor=CENTER)
+label1.grid(row=0)
+label2.grid(row=1)
 
-filename.place(relx=0.3, rely=0.1, anchor=W,width=350)
-key.place(relx=0.3, rely=0.2, anchor=W,width=350)
+filename.grid(row=0,column=1)
+key.grid(row=1,column=1)
 
-btn1.place(relx=0.2, rely=0.4, anchor=CENTER)
-btn2.place(relx=0.4, rely=0.4, anchor=CENTER)
-btn3.place(relx=0.6, rely=0.4, anchor=CENTER)
-btn4.place(relx=0.8, rely=0.4, anchor=CENTER)
+btn1.grid(row=2)
+btn2.grid(row=2,column=1)
+btn3.grid(row=3,column=1)
+btn4.grid(row=4,column=1)
 
 root.mainloop()
