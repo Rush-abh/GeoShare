@@ -1,9 +1,10 @@
 # GeoShare Project
 
-#Developed By: 
+##### Developed By: 
 
 [Rushabh Pancholi](https://www.linkedin.com/in/rushabh-pancholi-62235b166/), [Atik Khatri](https://www.linkedin.com/in/atikkhatri/), [Nishant Nath](https://www.linkedin.com/in/nishant-nath-a86a61129/), [Vishal Munjani](https://www.linkedin.com/in/vishal-munjani-689a21147/).
 
+##
 
 **Project Definition:** Geo Share is a system, which provides location based encryption to the existing cryptographic algorithms by adding additional layer of security that contains location and time. The layer checks the receiver’s location and it will only decrypt if the constraints matches.
 
@@ -24,6 +25,8 @@ Modules/Packages: PyCrypto, Socket, Tkinter, ssl, MySQL, Bcrypt, Haversine formu
 Enhanced Security: It provides better protection of data flowing across the network.
 Reduced resource overhead: Increased speed and less resource usage because of efficient algorithm.
 Double authentication: Geotag is checked twice for making algorithm better against spoofing.
+
+##
 
 **Application illustration shot:**
 
